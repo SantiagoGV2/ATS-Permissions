@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/alturas"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_permiso"
+            android:icon="@drawable/permiso"
+            android:title="@string/menu_permiso" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/confinado"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_riesgo"
+            android:icon="@drawable/electrico"
+            android:title="@string/menu_riesgo" />
+        <item
+            android:id="@+id/nav_vehiculo"
+            android:icon="@drawable/auto"
+            android:title="@string/menu_vehiculo"/>
+
+    </group>
+</menu>

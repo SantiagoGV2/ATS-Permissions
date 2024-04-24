@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-48dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:visibility="visible"
+        tools:context=".ui.vehiculos2.VehiculosFragment2$VehicleActivity">
+
+        <TextView
+            android:id="@+id/textvehiculo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Equipo de carreteras"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Botiquin completo de acuerdo al Res(1565 de 2014)"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <Spinner
+            android:id="@+id/spinner50"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Cruceta"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+        <Spinner
+            android:id="@+id/spinner51"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner50" />
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Extintor vigente"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+        <Spinner
+            android:id="@+id/spinner52"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner51" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Gato"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+        <Spinner
+            android:id="@+id/spinner53"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner52" />
+
+        <TextView
+            android:id="@+id/textView118"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Linterna con pilas"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+        <Spinner
+            android:id="@+id/spinner54"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner53" />
+
+        <TextView
+            android:id="@+id/textView119"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Tacos"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView118" />
+
+        <Spinner
+            android:id="@+id/spinner55"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner54" />
+
+        <TextView
+            android:id="@+id/textView120"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Llaves fijas o expansión-alicates- destornillador"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+        <Spinner
+            android:id="@+id/spinner56"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner55" />
+
+        <TextView
+            android:id="@+id/textView121"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="Triangulos o conos"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+        <Spinner
+            android:id="@+id/spinner57"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner56" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="32dp"
+            android:text="Guardar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="85dp"
+            android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner57" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

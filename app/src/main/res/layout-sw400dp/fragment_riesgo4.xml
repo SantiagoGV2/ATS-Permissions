@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="10dp"
+    tools:context=".ui.riesgo4.RiesgoFragment4$EighthActivity"
+    android:id="@+id/constraint11">
+
+
+    <TextView
+        android:id="@+id/text_fragment_riesgo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="370dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Verificación de distancias minimas de seguridad (Redes eléctricas)"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/textView29"
+        android:layout_width="333dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/border_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="388dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Distancia horizontal &quot;b&quot; a muros, balcones, salientes, ventanas y diferentes áreas independientemente de la  facilidad de accesibilidad de personas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="390dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Distancia vertical “a” sobre techos y proyecciones, aplicable solamente a zonas de muy difícil acceso y siempre que el propietario o tenedor de la instalación eléctrica tenga absoluto control tanto de la instalación  como de la edificación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="115dp"
+        android:layout_height="19dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Distancia (m)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="3.8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="24dp"
+        android:layout_height="19dp"
+        android:text="3.8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Tension nominal entre fases(Kv)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.8/13.2/11.4/7.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="44/34.5/33"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.45"
+        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toTopOf="@+id/textView29"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <View
+        android:id="@+id/textView40"
+        android:layout_width="324dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tension nominal entre fases(Kv)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia(m)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66/57.5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="44/34.5/33"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.8/13.2/11.4/7.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.3"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.7"
+        app:layout_constraintBottom_toBottomOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/textView40"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="375dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Distancia vertical &quot;c&quot; sobre o debajo de balcones o techos de facil acceso a personas, y sobre techos accesibles a vehiculos de maximo 2.45m de altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <View
+        android:id="@+id/textView53"
+        android:layout_width="318dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tension nominal entre fases(Kv)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia(m)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="44/34.5/33"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.8/13.2/11.4/7.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView53"
+        app:layout_constraintEnd_toEndOf="@+id/textView53"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="@+id/textView53"
+        app:layout_constraintTop_toTopOf="@+id/textView53"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Distancia vertical &quot;d&quot; a carreteras, calles, callejones, zonas peatonales, areas sujetas a trafico vehicular para vehiculos de mas de 2.45m de altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <View
+        android:id="@+id/textView63"
+        android:layout_width="308dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tension nominal estre fases(Kv)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distancia(m)"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.966"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="115/110"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="66/57.5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="44/34.5/33"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.8/13.2/11.4/7.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.197" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.8"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.6"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintEnd_toEndOf="@+id/textView63"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <com.fibrateltec.atsapp.ui.Signature.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="354dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/signatture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
+
+    <Button
+        android:id="@+id/btnPDF"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:text="clear"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+
+    <Button
+        android:id="@+id/btnNext2"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

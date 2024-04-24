@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fibrateltec.atsapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_permiso"
+            app:destination="@id/nav_permiso" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_riesgo"
+            app:destination="@id/nav_riesgo" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_vehiculo"
+            app:destination="@+id/nav_vehiculo"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.fibrateltec.atsapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery">
+    <action
+        android:id="@+id/action_nav_gallery_to_nav_gallery2"
+        app:destination="@id/nav_gallery2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery2"
+        android:label="@string/menu_gallery2"
+        android:name="com.fibrateltec.atsapp.ui.gallery2.GalleryFragment2"
+        tools:layout="@layout/fragment_gallery2">
+        <action
+            android:id="@+id/action_nav_gallery2_to_nav_gallery3"
+            app:destination="@id/nav_gallery3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery3"
+        android:label="@string/menu_gallery3"
+        android:name="com.fibrateltec.atsapp.ui.gallery3.GalleryFragment3"
+        tools:layout="@layout/fragment_gallery3" >
+    <action
+        android:id="@+id/action_nav_gallery3_to_nav_pdf"
+        app:destination="@id/nav_pdf" />
+</fragment>
+    <fragment
+        android:id="@+id/nav_pdf"
+        android:label="@string/menu_pdf"
+        android:name="com.fibrateltec.atsapp.ui.pdf2.PdfFragment2"
+        tools:layout="@layout/fragment_pdf2" />
+
+    <fragment
+        android:id="@+id/nav_permiso"
+        android:name="com.fibrateltec.navbar.ui.permiso.PermisoFragment"
+        android:label="@string/menu_permiso"
+        tools:layout="@layout/fragment_permiso" >
+    <action
+        android:id="@+id/action_nav_permiso_to_nav_permiso2"
+        app:destination="@id/nav_permiso2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_permiso2"
+        android:name="com.fibrateltec.atsapp.ui.permiso2.PermisoFragment2"
+        android:label="@string/menu_permiso2"
+        tools:layout="@layout/fragment_permiso2" >
+        <action
+            android:id="@+id/action_nav_permiso2_to_nav_permiso3"
+            app:destination="@id/nav_permiso3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_permiso3"
+        android:label="@string/menu_permiso3"
+        android:name="com.fibrateltec.atsapp.ui.permiso3.PermisoFragment3"
+        tools:layout="@layout/fragment_permiso3" >
+        <action
+            android:id="@+id/action_nav_permiso3_to_nav_pdf4"
+            app:destination="@id/nav_pdf4" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pdf4"
+        android:label="@string/menu_pdf4"
+        android:name="com.fibrateltec.atsapp.ui.pdf4.PdfFragment4"
+        tools:layout="@layout/fragment_pdf4" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.fibrateltec.atsapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow">
+    <action
+        android:id="@+id/action_nav_slideshow_to_nav_confinados2"
+        app:destination="@id/nav_confinados2" />
+</fragment>
+    <fragment
+        android:id="@+id/nav_confinados2"
+        android:label="@string/menu_confinados2"
+        android:name="com.fibrateltec.atsapp.ui.slideshow2.ConfinadosFragment2"
+        tools:layout="@layout/fragment_confinados2">
+        <action
+            android:id="@+id/action_nav_confinados2_to_nav_confinados3"
+            app:destination="@id/nav_confinados3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_confinados3"
+        android:label="@string/menu_confinados3"
+        android:name="com.fibrateltec.atsapp.ui.slideshow3.ConfinadosFragment3"
+        tools:layout="@layout/fragment_confinados3" >
+    <action
+        android:id="@+id/action_nav_confinados3_to_nav_pdf3"
+        app:destination="@id/nav_pdf3" />
+</fragment>
+    <fragment
+        android:id="@+id/nav_pdf3"
+        android:label="@string/menu_pdf3"
+        android:name="com.fibrateltec.atsapp.ui.pdf3.PdfFragment3"
+        tools:layout="@layout/fragment_pdf3" />
+
+
+    <fragment
+        android:id="@+id/nav_riesgo"
+        android:name="com.fibrateltec.navbar.ui.riesgo.RiesgoFragment"
+        android:label="@string/menu_riesgo"
+        tools:layout="@layout/fragment_riesgo" >
+        <action
+            android:id="@+id/action_nav_riesgo_to_nav_riesgo22"
+            app:destination="@id/nav_riesgo2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_riesgo2"
+        android:label="@string/menu_riesgo2"
+        android:name="com.fibrateltec.atsapp.ui.riesgo2.RiesgoFragment2"
+        tools:layout="@layout/fragment_riesgo2">
+        <action
+            android:id="@+id/action_nav_riesgo2_to_nav_riesgo3"
+            app:destination="@id/nav_riesgo3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_riesgo3"
+        android:label="@string/menu_riesgo3"
+        android:name="com.fibrateltec.atsapp.ui.riesgo3.RiesgoFragment3"
+        tools:layout="@layout/fragment_riesgo2">
+        <action
+            android:id="@+id/action_nav_riesgo3_to_nav_riesgo4"
+            app:destination="@id/nav_riesgo4" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_riesgo4"
+        android:label="@string/menu_riesgo4"
+        android:name="com.fibrateltec.atsapp.ui.riesgo4.RiesgoFragment4"
+        tools:layout="@layout/fragment_riesgo4" >
+        <action
+            android:id="@+id/action_nav_riesgo4_to_nav_pdf2"
+            app:destination="@id/nav_pdf2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pdf2"
+        android:label="@string/menu_pdf2"
+        android:name="com.fibrateltec.atsapp.ui.pdf.PdfFragment"
+        tools:layout="@layout/fragment_pdf" />
+
+    <fragment
+        android:id="@+id/nav_vehiculo"
+        android:label="@string/menu_vehiculo"
+        android:name="com.fibrateltec.atsapp.ui.vehiculos.VehiculoFragment"
+        tools:layout="@layout/fragment_vehiculo">
+        <action
+            android:id="@+id/action_nav_vehiculo_to_nav_vehiculo2"
+            app:destination="@id/nav_vehiculo2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vehiculo2"
+        android:label="@string/menu_vehiculo2"
+        android:name="com.fibrateltec.atsapp.ui.vehiculos2.VehiculosFragment2"
+        tools:layout="@layout/fragment_vehiculo2"/>
+
+
+
+
+
+
+</navigation>

@@ -1,0 +1,373 @@
+<resources>
+    <string name="app_name">ATS app</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FibraTelTec</string>
+    <string name="nav_header_subtitle">fibrateltec@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+
+    <string name="menu_gallery">Trabajo En Alturas</string>
+    <string name="menu_gallery2">Identificacion de peligros potenciales</string>
+    <string name="menu_gallery3">Caracterizacion de tareas criticas</string>
+    <string name="menu_pdf">Formulario Alturas</string>
+
+    <string name="menu_permiso">Permiso de Trabajo en Alturas</string>
+    <string name="menu_permiso2">Permiso de Trabajo en Alturas2</string>
+    <string name="menu_permiso3">Permiso de Trabajo en Alturas3</string>
+    <string name="menu_pdf4">Formulario Permiso Alturas</string>
+
+    <string name="menu_slideshow">Confinados</string>
+    <string name="menu_confinados2">Confinados2</string>
+    <string name="menu_confinados3">Confinados3</string>
+    <string name="menu_pdf3">Formulario Confinados</string>
+
+    <string name="menu_riesgo">Riesgo Electrico</string>
+    <string name="menu_riesgo2">Riesgo Electrico2</string>
+    <string name="menu_riesgo3">Riesgo Electrico3</string>
+    <string name="menu_riesgo4">Riesgo Electrico4</string>
+    <string name="menu_pdf2">Formulario Electrico</string>
+
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text"></string>
+    <string name="menu_vehiculo">Vehiculo</string>
+    <string name="menu_vehiculo2">Vehiculo2</string>
+
+    <array name="fisico">
+        <item>Ruido de impacto</item>
+        <item>Ruido de intermitente</item>
+        <item>Ruido de continuo</item>
+        <item>Ilumicacion Natural</item>
+        <item>Iluminacion artificial</item>
+        <item>Vibraciones</item>
+        <item>Temperaturas extremas</item>
+        <item>Radiaciones ionizantes</item>
+        <item>Radiaciones no ionizantes</item>
+    </array>
+    <array name="fisico2">
+        <item>Disponer y diligenciar el formato de análisis de trabajo seguro</item>
+        <item>EPP</item>
+        <item>Evitar la exposición </item>
+    </array>
+    <array name="quimico">
+        <item>Polvos organicos inorganicos</item>
+        <item>Gases y vapores</item>
+    </array>
+    <array name="quimico2">
+        <item>Adecuada disposición de los residuos</item>
+        <item>Ventilación natural permanente</item>
+        <item>Almacenamiento correcto de materiales y productos químicos</item>
+    </array>
+    <array name="Biologico">
+        <item>Virus</item>
+        <item>Bacterias</item>
+        <item>Hongos</item>
+        <item>Picadura</item>
+        <item>Mordeduras</item>
+    </array>
+    <array name="Biologicos2">
+        <item>Utilizacion de EPP</item>
+        <item>Verificar agentes de amenazas</item>
+        <item>Ventilacion de la camara</item>
+    </array>
+    <array name="psicosocial">
+        <item>Características de la tarea</item>
+        <item>Grupo social del trabajo</item>
+        <item>Organización del trabajo</item>
+        <item>Gestión de la organización Jornada de Trabajo</item>
+    </array>
+    <array name="psicosocial2">
+        <item>No subestimar la probabilidad de que ocurra un accidente aun cuando existan pocos riesgos</item>
+        <item>Evitar el exceso de confianza</item>
+        <item>No debe primar la seguridad individual sobre la colectiva</item>
+        <item>El logro de las metas de productividad no me impide conservar la calma y actuar con serenidad</item>
+    </array>
+    <array name="biomecanicos">
+        <item>Postura prolongada o esfuerzo</item>
+        <item>Manipulación manual de cargas</item>
+    </array>
+    <array name="biomecanicos2">
+        <item>Implementación de pausas activas</item>
+        <item>Cambiar de postura frecuentemente</item>
+        <item>Utilizar puntos adicionales de apoyo</item>
+        <item>Buen apoyo de los pies separados a la amplitud de los hombros</item>
+        <item>Espalda recta, doblar las rodillas</item>
+        <item>Carga tan cerca del cuerpo como sea posible</item>
+    </array>
+    <array name="biomecanicos3">
+        <item>Postura prolongada o esfuerzo</item>
+        <item>Manipulación manual de cargas</item>
+    </array>
+    <array name="biomecanicos4">
+        <item>Implementación de pausas activas</item>
+        <item>Cambiar de postura frecuentemente</item>
+        <item>Utilizar puntos adicionales de apoyo</item>
+        <item>Buen apoyo de los pies separados a la amplitud de los hombros</item>
+        <item>Espalda recta, doblar las rodillas</item>
+        <item>Carga tan cerca del cuerpo como sea posible</item>
+    </array>
+    <array name="alturas">
+        <item>Caídas de diferente nivel</item>
+        <item>Golpes,heridas, fracturas</item>
+        <item>Caída de escaleras</item>
+    </array>
+    <array name="alturas2">
+        <item>Utilizar EPCC adecuados para la labor</item>
+        <item>Disponer de puntos de anclaje con resistencia 5000 lb</item>
+        <item>Emplear sistemas de acceso como escaleras o pretales</item>
+        <item>Capacitar y entrenar al trabajador</item>
+        <item>Inspeccionar los EPPS</item>
+        <item>Aplicar el procedimiento para trabajo seguro en alturas</item>
+        <item>Disponer de un inspector en campo</item>
+    </array>
+    <array name="mecanicos">
+        <item>Atrapado por o Entre Caídas al mismo nivel</item>
+        <item>Caída de objetos y/o materiales</item>
+        <item>Contacto con herramientas corto Punzantes</item>
+    </array>
+    <array name="mecanicos2">
+        <item>Solicitar el cambio de equipos y herramientas en mal estado</item>
+        <item>Utilizar las herramientas para lo que realmente fueron diseñadas</item>
+        <item>Mantener las herramientas en buen estado e inspeccionarlas periódicamente</item>
+    </array>
+    <array name="confinados">
+        <item>Intoxicación por gases o deficiencia de oxigeno</item>
+        <item>Ambiente inflamable o electrificado</item>
+        <item>Caídas a diferente nivel</item>
+    </array>
+    <array name="confinados2">
+        <item>Contar con autorización de entrada al espacio confinado </item>
+        <item>Contar con vigilancia externa continuada</item>
+        <item>Aislamiento del espacio confinado frente a otros tipos de riesgo</item>
+    </array>
+    <array name="electrico">
+        <item>Contacto directo e indirecto con energías Peligrosas</item>
+        <item>Cortocircuito</item>
+        <item>Sobrecarga Estática</item>
+        <item>Descargas Atmófericas</item>
+        <item>Mal estado y defectos de Instalaciones eléctricas</item>
+    </array>
+    <array name="electrico2">
+        <item>No utilizar equipos y sistemas eléctricos en malas condiciones</item>
+        <item>No sobrecargar circuitos eléctricos</item>
+        <item>No intervenir líneas energizadas sin autorización ni conocimiento</item>
+        <item>Tomar las medidas necesarias para evitar aproximarse a líneas eléctricas</item>
+        <item>Cortar todas las fuentes en tensión </item>
+        <item>Utilizar los EPP apropiados para el nivel de tensión(BT)</item>
+    </array>
+    <array name="electrico4">
+        <item>Contacto directo e indirecto con energías Peligrosas</item>
+        <item>Cortocircuito</item>
+        <item>Sobrecarga Estática</item>
+        <item>Descargas Atmófericas</item>
+        <item>Mal estado y defectos de Instalaciones eléctricas</item>
+    </array>
+    <array name="electrico5">
+        <item>No utilizar equipos y sistemas eléctricos en malas condiciones</item>
+        <item>No sobrecargar circuitos eléctricos</item>
+        <item>No intervenir líneas energizadas sin autorización ni conocimiento</item>
+        <item>Tomar las medidas necesarias para evitar aproximarse a líneas eléctricas</item>
+        <item>Cortar todas las fuentes en tensión </item>
+        <item>Utilizar los EPP apropiados para el nivel de tensión(BT)</item>
+    </array>
+    <array name="seguridad">
+        <item>Superficies irregulares</item>
+        <item>Orden y aseo</item>
+        <item>Incendios y/o explosiones</item>
+        <item>Accidentes de tránsito</item>
+        <item>Robos, atracos, atentados y desorden publico</item>
+    </array>
+    <array name="seguridad2">
+        <item>Disponer de equipos de extinción del fuego en lugares de fácil acceso</item>
+        <item>Disponer de sistemas de comunicación</item>
+        <item>Conocer la ubicación de los hospitales más cercanos al punto de trabajo</item>
+        <item>Tener un botiquín de emergencia en un lugar visible y de fácil acceso</item>
+        <item>Conservar la calma en caso de emergencia</item>
+        <item>Mantener el lugar de trabajo en condiciones óptimas de orden y aseo</item>
+        <item>Implementar prácticas de manejo defensivo</item>
+    </array>
+    <array name="fenomenos">
+        <item>Sismo</item>
+        <item>Terremoto</item>
+        <item>Vendaval</item>
+        <item>Inundación</item>
+        <item>Derrumbe</item>
+        <item>Precipitaciones (lluvias, granizadas)</item>
+    </array>
+    <array name="fenomenos2">
+        <item>Disponer de equipos de extinción del fuego en lugares de fácil acceso</item>
+        <item>Disponer de sistemas de comunicación</item>
+        <item>Conocer la ubicación de los hospitales más cercanos al punto de trabajo</item>
+        <item>Tener un botiquín de emergencia en un lugar visible y de fácil acceso</item>
+        <item>Conservar la calma en caso de emergencia</item>
+        <item>Mantener el lugar de trabajo en condiciones óptimas de orden y aseo</item>
+        <item>Implementar prácticas de manejo defensivo</item>
+    </array>
+
+    <string-array name="spinners">
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Cambio</item>
+    </string-array>
+    <string-array name="spinners2">
+        <item>Si</item>
+        <item>No</item>
+        <item>N/A</item>
+    </string-array>
+
+    <array name="spinnerHerramienta">
+        <item>Power metter</item>
+        <item>Streper</item>
+        <item>Chaqueta</item>
+        <item>Cortadora</item>
+        <item>Corta frios</item>
+        <item>Destornillador</item>
+        <item>Pinzas de punta</item>
+        <item>Medidor de señal (HFC)</item>
+        <item>Ponchadora RG6</item>
+        <item>Pelacable</item>
+        <item>Torque 11</item>
+
+
+    </array>
+
+    <array name="procedimiento">
+        <item>Inspección del área</item>
+        <item>Utlización de EPP y EPPC</item>
+        <item>Señalización del area</item>
+        <item>Verificación de la señalización</item>
+    </array>
+    <array name="tareas">
+        <item>Espacios Confinados</item>
+        <item>Trabajo en Caliente</item>
+        <item>Energías Peligrosas</item>
+
+    </array>
+    <string-array name="tecnicos">
+        <item>ARGEMIRO MANUEL ENAMORADO OROZCO</item>
+        <item>EDGAR ALBERTO MARTINEZ SALGADO</item>
+        <item>NICOLAS ALBERTO QUINTERO PUENTES</item>
+        <item>JHON ALEXANDER BARAHONA RUEDAO</item>
+        <item>NELSON ORLANDO PARRAGA TOVAR</item>
+        <item>YEISON SANCHEZ VAQUIRO</item>
+        <item>JEISSON STIVEN ZAMORA ZAMORA</item>
+        <item>KEYNER DANIEL DE AVILA ZUÑIGA</item>
+        <item>YESID DARIO PETRO MARTINEZ</item>
+        <item>CRISTIAN LEONARDO VELASQUEZ NAVARRETE</item>
+        <item>ELVER ABELLO POLO</item>
+        <item>ALEXIO ROBERTO JULIO BELLIDO</item>
+        <item>ALEXANDER RODRIGUEZ</item>
+        <item>JHONNATTAN SMITH VELASQUEZ RAMOS</item>
+        <item>YOSSY ZAPATA REINA</item>
+        <item>IVAN DARIO VALDERRAMA VARGAS</item>
+        <item>JIMMY FABIAN VALDERRAMA VARGAS</item>
+        <item>WELTHER LEWIS MUSUSU NEMPEQUE</item>
+        <item>OSCAR DAVID CAVIEDES GOMEZ</item>
+        <item>OSCAR FERNANDO LUNA PEREZ</item>
+        <item>DIEGO FERNANDO FARFAN VILLARRAGA</item>
+        <item>WILMER GAVIRIA HOLGUIN</item>
+        <item>JOSE JAVIER GUTIERREZ PADUA</item>
+        <item>ESTEFANIA ANACONA ENCIZO</item>
+        <item>JHON FREDY PAYA ROMERO</item>
+        <item>YHON MARIO MONTENEGRO BENAVIDES</item>
+        <item>YEISON ALBERTO RAMIREZ GOMEZ</item>
+        <item>JOSE ALFREDO JIMENEZ SERPA</item>
+        <item>LUIS ALEJANDRO CUESTAS CARDENAS</item>
+        <item>JUAN ANTONIO RODRIGUEZ RODRIGUEZ</item>
+        <item>VICTOR JESUS GOMEZ QUIJADA</item>
+        <item>JHONMER MORENO BOLIVAR</item>
+
+    </string-array>
+    <string-array name="supervisores">
+        <item>OMAR ALFREDO TRIANA ACERO</item>
+        <item>DUVAN ANDRES PINILLA QUECAN</item>
+        <item>WILLIAM DAVID LÓPEZ MORALES</item>
+    </string-array>
+
+    <string-array name="cedulas">
+        <item>1030683839</item>
+        <item>79584698</item>
+        <item>80725496</item>
+        <item>79925400</item>
+        <item>79790902</item>
+        <item>79766091</item>
+        <item>1024568027</item>
+        <item>1023017584</item>
+        <item>1050966967</item>
+        <item>1068659291</item>
+        <item>1012417803</item>
+        <item>1022978895</item>
+        <item>80730125</item>
+        <item>80472817</item>
+        <item>1030580602</item>
+        <item>1032402040</item>
+        <item>1030548553</item>
+        <item>80895950</item>
+        <item>80472712</item>
+        <item>1013602732</item>
+        <item>93450238</item>
+        <item>80548737</item>
+        <item>1072715628</item>
+        <item>79965545</item>
+        <item>79448563</item>
+        <item>1020752036</item>
+        <item>1000694905</item>
+        <item>80664855</item>
+        <item>79577249</item>
+        <item>80757848</item>
+        <item>11203921</item>
+        <item>2639756</item>
+        <item>5071395</item>
+        <item>73199359</item>
+    </string-array>
+
+    <string-array name="cedula_supervisor">
+        <item>1030683839</item>
+        <item>1072715628</item>
+        <item>1020752036</item>
+
+    </string-array>
+
+    <string-array name="preoperacional_vehiculos">
+        <item>Cumple</item>
+        <item>No cumple</item>
+        <item>No aplica</item>
+    </string-array>
+
+    <string-array name="nombre_conductor">
+        <item>HUMBERTO DE JESUS MENDEZ ESCOBAR</item>
+        <item>JOSE GUSTAVO SARMIENTO DIAZ</item>
+        <item>VICTOR ALEXANDER LOPEZ RODRIGUEZ</item>
+        <item>WILLIAN ALEJANDRO SANDOVAL PUERTO</item>
+        <item>OSCAR IVAN MORALES GUEVARA</item>
+        <item>ARGEMIRO MANUEL ENAMORADO OROZCO</item>
+        <item>EDGAR ALBERTO MARTINEZ SALGADO</item>
+        <item>OSCAR FERNANDO LUNA PEREZ</item>
+        <item>JOSE GUSTAVO SARMIENTO DIAZ</item>
+        <item>NELSON ORLANDO PARRAGA TOVAR</item>
+        <item>JEISSON STIVEN ZAMORA  ZAMORA</item>
+        <item>YESID DARIO PETRO MARTINEZ</item>
+        <item>ALEXIO ROBERTO JULIO BELLIDO</item>
+        <item>ALEXANDER RODRIGUEZ</item>
+        <item>YOSSY ZAPATA REINA</item>
+        <item>DIEGO FERNANDO FARFAN VILLARRAGA</item>
+        <item>WILMER GAVIRIA HOLGUIN</item>
+        <item>JOSE JAVIER GUTIERREZ PADUA</item>
+        <item>YHON MARIO MONTENEGRO BENAVIDES</item>
+        <item>YEISON ALBERTO RAMIREZ GOMEZ</item>
+        <item>JOSE ALFREDO JIMENEZ SERPA</item>
+        <item>JUAN ANTONIO RODRIGUEZ RODRIGUEZ</item>
+        <item>VICTOR JESUS GOMEZ QUIJADA</item>
+        <item>SERGIO ANTONIO FAJARDO GARCIA</item>
+        <item>LUIS ALEJANDRO CUESTAS CARDENAS</item>
+    </string-array>
+
+    <string-array name="cargo">
+        <item>Tecnico</item>
+        <item>Supervisor</item>
+    </string-array>
+
+
+</resources>

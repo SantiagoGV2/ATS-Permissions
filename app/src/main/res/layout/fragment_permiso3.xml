@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:id="@+id/constraint14"
+        tools:context=".ui.permiso3.PermisoFragment3$FifteenthActivity"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/Permiso3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿El personal cuanta con el equipo definido para acceder al sitio?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item3" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@+id/item3"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="200dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:text="¿Se realizo el análisis de seguridad en el trabajo?"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toEndOf="@+id/item"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="¿El personal cumple con los requisitos de aptitud para realizar la tarea?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/item2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="¿El personal cuanta con el equipo de protección definido para la tarea?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item2" />
+
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿El equipo para acceder al sitio y el de pretección personal fueron inspeccionados?"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item4" />
+
+        <Spinner
+            android:id="@+id/spinner21"
+            android:layout_width="116dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/item4"
+            app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+        <Spinner
+            android:id="@+id/spinner22"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/item5"
+            app:layout_constraintTop_toBottomOf="@+id/spinner21" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿El sitio donde se ejecutará el trabajo está aislado y señalizado completamente?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item5" />
+
+        <Spinner
+            android:id="@+id/spinner23"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView78"
+            app:layout_constraintTop_toBottomOf="@+id/spinner22" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="200dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿Se han instalado mamparas o cinta para aislar y señalizar  la zona y no permitir el paso de vehículos o personas?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+        <Spinner
+            android:id="@+id/spinner24"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/textView79"
+            app:layout_constraintTop_toBottomOf="@+id/spinner23" />
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="¿Cuentan con eslinga de seguridad con absorbente de caídas?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+        <Spinner
+            android:id="@+id/spinner25"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textView80"
+            app:layout_constraintTop_toBottomOf="@+id/spinner24" />
+
+        <TextView
+            android:id="@+id/textView81"
+            android:layout_width="202dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿Cuentan con freno de seguridad, certificado y apropiado para el tipo de línea de vida?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+        <Spinner
+            android:id="@+id/spinner26"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textView81"
+            app:layout_constraintTop_toBottomOf="@+id/spinner25" />
+
+        <TextView
+            android:id="@+id/textView83"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="¿Se cuenta con líneas de vida para cada uno de los operadores?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+        <Spinner
+            android:id="@+id/spinner27"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView83"
+            app:layout_constraintTop_toBottomOf="@+id/spinner26" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="¿Los conectores o mosquetones son de doble seguro?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+        <Spinner
+            android:id="@+id/spinner28"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toEndOf="@+id/textView84"
+            app:layout_constraintTop_toBottomOf="@+id/spinner27" />
+
+        <TextView
+            android:id="@+id/textView85"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="¿Las cuerdas se encuentran libres de nudos?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView84" />
+
+        <Spinner
+            android:id="@+id/spinner29"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textView85"
+            app:layout_constraintTop_toBottomOf="@+id/spinner28" />
+
+        <TextView
+            android:id="@+id/textView87"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿Se controlaron los riesgos presentes en el sitio de trabajo?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView85" />
+
+        <Spinner
+            android:id="@+id/spinner30"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toEndOf="@+id/textView87"
+            app:layout_constraintTop_toBottomOf="@+id/spinner29" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="¿El personal que va a realizar la labor conoce el procedimiento de emergencia y rescate?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView87" />
+
+        <Spinner
+            android:id="@+id/spinner31"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView88"
+            app:layout_constraintTop_toBottomOf="@+id/spinner30" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="¿Las escaleras cumplen las especificaciones técnicas?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+        <Spinner
+            android:id="@+id/spinner32"
+            android:layout_width="110dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toEndOf="@+id/textView89"
+            app:layout_constraintTop_toBottomOf="@+id/spinner31" />
+
+        <Spinner
+            android:id="@+id/nombre_supervisor"
+            android:layout_width="327dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Nombre Supervisor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView89" />
+
+        <Spinner
+            android:id="@+id/cedula"
+            android:layout_width="327dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Cedula Supervisor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_supervisor" />
+
+        <com.fibrateltec.atsapp.ui.Signature.SignaturePad
+            android:id="@+id/signaturePad"
+            android:layout_width="352dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/signatture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="Firma supervisor"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cedula" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Firma tecnico"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear1" />
+
+        <com.fibrateltec.atsapp.ui.Signature.SignaturePad
+            android:id="@+id/signaturePad2"
+            android:layout_width="352dp"
+            android:layout_height="160dp"
+            android:background="@drawable/signatture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:text="Next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear2" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:text="Guardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clear2" />
+
+        <Button
+            android:id="@+id/clear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signaturePad" />
+
+        <Button
+            android:id="@+id/clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signaturePad2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
