@@ -1,13 +1,17 @@
 package com.fibrateltec.atsapp.ui.slideshow
 
 
+import android.Manifest
 import android.content.Intent
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.graphics.pdf.PdfDocument
+import android.os.Build
 
 import android.os.Bundle
 import android.os.Environment
+import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +22,7 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.app.ActivityCompat
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -31,9 +36,12 @@ import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
+import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import kotlin.math.ceil
+import kotlin.math.min
 
 class SlideshowFragment : Fragment() {
 
@@ -49,7 +57,7 @@ class SlideshowFragment : Fragment() {
     ): View {
         val slideshowViewModel =
             ViewModelProvider(this).get(SlideshowViewModel::class.java)
-
+            askPermissions()
         _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
@@ -640,15 +648,10 @@ class SlideshowFragment : Fragment() {
             nxtboton4.setOnClickListener {
                 val intent = Intent(requireContext(), ConfinadosFragment2.FourActivity::class.java)
                 startActivity(intent)
-
+                convertXmlToPdf(showNextButton = false) // Muestra
             }
 
-            val btnxml4: Button = root.findViewById(R.id.btnxml4)
-            btnxml4.setOnClickListener {
-                isCreatePDFButtonVisible = !isCreatePDFButtonVisible
-                btnxml4.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-                exportToPDF()
-            }
+
         val etBirthDate: TextView= root.findViewById(R.id.fecha)
 
         val fechaActual = obtenerFechaActual()
@@ -666,107 +669,101 @@ class SlideshowFragment : Fragment() {
     }
 
 
-        private fun exportToPDF() {
-            val document = Document()
-            val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Confinados.pdf").absolutePath
-            val file = File(path)
-            try {
-                val fileOutputStream = FileOutputStream(file)
-
-                PdfWriter.getInstance(document, fileOutputStream)
-
-                document.open()
-
-                // Agrega el primer contenido al documento PDF
-                val constraint: ConstraintLayout = binding.constraint4
-                addViewToPDF(document, constraint)
-
-                Toast.makeText(requireContext(), "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
-
-            } catch (e: Exception) {
-                e.printStackTrace()
-                Toast.makeText(requireContext(), "Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
-            }
-            document.close()
-            binding.nextBtn4.visibility = btnNextVisibility
-
-        }
-
-
-        private fun addViewToPDF(document: Document, view: View) {
-            val btnCreatePDF = view.findViewById<Button>(R.id.btnxml4)
-
-            btnCreatePDF.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-
-            binding.nextBtn4.visibility = View.GONE
-            // Calcula el margen del documento
-            val margin = 0f
-
-            val increasedPageWidth = 550f
-            // Calcula el tamaño de la página del documento
-            val pageSize = document.pageSize
-            val pageWidth = increasedPageWidth - margin * 2.5f
-            val pageHeight = pageSize.height - margin * 2.5f
-
-            // Convierte la vista a un bitmap
-            val bitmap = convertViewToBitmap(view)
-
-            // Convierte el bitmap a bytes para agregarlo al documento PDF
-            val stream = ByteArrayOutputStream()
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
-            val image = Image.getInstance(stream.toByteArray())
-
-            // Ajusta el tamaño de la imagen al documento
-            val aspectRatio = image.width.toFloat() / image.height.toFloat()
-            val newWidth = pageWidth * 1f // Ajusta el ancho según tu preferencia
-            val newHeight = newWidth / aspectRatio
-
-            // Si la imagen es más grande que la página, divide la imagen en varias partes
-            if (newHeight > pageHeight) {
-                divideBitmapIntoSections(document, bitmap, pageHeight, aspectRatio, pageWidth)
-            } else {
-                // Ajusta el tamaño de la imagen al documento
-                image.scaleToFit(newWidth, newHeight)
-
-                // Agrega la imagen al documento
-                document.add(image)
-            }
-        }
-
-    private fun convertViewToBitmap(view: View): Bitmap {
-        val bitmap = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(bitmap)
-        view.draw(canvas)
-        return bitmap
+    private fun askPermissions() {
+        ActivityCompat.requestPermissions(
+            requireActivity(),
+            arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
+            REQUEST_CODE
+        )
     }
 
-    private fun divideBitmapIntoSections(document: Document, bitmap: Bitmap, pageHeight: Float, aspectRatio: Float, pageWidth: Float) {
-        val numVerticalSections = Math.ceil((bitmap.height.toDouble() / pageHeight)).toInt()
-        var startY = 0f
+    private fun convertXmlToPdf(showNextButton: Boolean) {
+        // Oculta el botón btnxml3
 
-        for (i in 0 until numVerticalSections) {
-            var sectionHeight = pageHeight
-            val remainingHeight = bitmap.height - startY
-
-            if (remainingHeight < sectionHeight) {
-                sectionHeight = remainingHeight
-            }
-
-            val sectionBitmap = Bitmap.createBitmap(bitmap, 0, startY.toInt(), bitmap.width, sectionHeight.toInt())
-
-            val byteArrayOutputStream = ByteArrayOutputStream()
-            sectionBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
-            val byteArray = byteArrayOutputStream.toByteArray()
-
-            val sectionImage = Image.getInstance(byteArray)
-            sectionImage.scaleToFit(pageWidth, sectionHeight)
-
-            document.newPage()
-            document.add(sectionImage)
-
-            startY += sectionHeight
+        // Oculta el botón nextBtn si showNextButton es falso
+        if (showNextButton == showNextButton) {
+            binding.nextBtn4.visibility = View.GONE
         }
 
+        val constraint: ConstraintLayout= binding.constraint4
+
+        val displayMetrics = DisplayMetrics()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            requireContext().display!!.getRealMetrics(displayMetrics)
+        } else {
+            requireActivity().windowManager.defaultDisplay.getMetrics(displayMetrics)
+        }
+
+        // Measure the view with UNSPECIFIED height
+        constraint.measure(
+            View.MeasureSpec.makeMeasureSpec(displayMetrics.widthPixels, View.MeasureSpec.EXACTLY),
+            View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+        )
+
+        // Calculate total number of pages needed based on view height
+        val totalHeight = constraint.measuredHeight
+        val totalPages = ceil((totalHeight.toFloat() / displayMetrics.heightPixels).toDouble()).toInt()
+
+        // Create a new PdfDocument instance
+        val document = PdfDocument()
+
+        // Obtain the width and height of the view
+        val viewWidth = constraint.measuredWidth
+        for (i in 0 until totalPages) {
+            // Create a PageInfo object specifying the page attributes
+            val pageInfo = PdfDocument.PageInfo.Builder(viewWidth, displayMetrics.heightPixels, i + 1).create()
+
+            // Start a new page
+            val page = document.startPage(pageInfo)
+
+            // Get the Canvas object to draw on the page
+            val canvas = page.canvas
+
+            // Calculate the portion of the view to be drawn on this page
+            val start = i * displayMetrics.heightPixels
+            val end = min((start + displayMetrics.heightPixels).toDouble(), totalHeight.toDouble()).toInt()
+
+            // Translate the canvas to draw the correct portion of the view
+            canvas.translate(0f, -start.toFloat())
+
+            // Draw the portion of the view on the canvas
+            constraint.layout(0, -start, viewWidth, end)
+            constraint.draw(canvas)
+
+            // Finish the page
+            document.finishPage(page)
+        }
+
+        // Specify the path and filename of the output PDF file
+        val downloadsDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+        val fileName = "Confinados.pdf"
+        val filePath = File(downloadsDir, fileName)
+        try {
+            // Save the document to a file
+            val fos = FileOutputStream(filePath)
+            document.writeTo(fos)
+            document.close()
+
+            // Restablece la visibilidad del botón btnxml3
+
+            // Restablece la visibilidad del botón nextBtn si showNextButton es true
+
+            binding.nextBtn4.visibility = View.VISIBLE
+
+
+            fos.close()
+            // PDF conversion successful
+            Toast.makeText(requireContext(), "XML to PDF Conversion Successful", Toast.LENGTH_LONG).show()
+        } catch (e: IOException) {
+            e.printStackTrace()
+            // Error occurred while converting to PDF
+            Toast.makeText(requireContext(), "Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    companion object {
+        const val REQUEST_CODE = 1232
     }
     override fun onDestroyView() {
         super.onDestroyView()

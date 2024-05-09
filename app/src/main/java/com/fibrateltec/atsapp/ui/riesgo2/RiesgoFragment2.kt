@@ -6,9 +6,11 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.graphics.pdf.PdfDocument
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,6 +36,9 @@ import com.itextpdf.text.pdf.PdfWriter
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
+import java.io.IOException
+import kotlin.math.ceil
+import kotlin.math.min
 
 class RiesgoFragment2 : Fragment(){
 
@@ -60,7 +65,6 @@ class RiesgoFragment2 : Fragment(){
 
     class SixthActivity : AppCompatActivity() {
 
-        private var isCreatePDFButtonVisible = true
         private var btnNextVisibility = View.VISIBLE
 
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -74,15 +78,10 @@ class RiesgoFragment2 : Fragment(){
             nxtboton9.setOnClickListener {
                 val intent = Intent(this, RiesgoFragment3.SeventhActivity::class.java)
                 startActivity(intent)
-
+                convertXmlToPdf(showNextButton = false) // Muestra nextBtn en el PDF
             }
 
-            val btnxml9: Button = findViewById(R.id.btnxml9)
-            btnxml9.setOnClickListener {
-                isCreatePDFButtonVisible = !isCreatePDFButtonVisible
-                btnxml9.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-                exportToPDF()
-            }
+
 
 
         }
@@ -139,107 +138,94 @@ class RiesgoFragment2 : Fragment(){
 
 
 
-        private fun exportToPDF() {
-            val document = Document()
-            val path = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "Peligros_potenciales2.pdf").absolutePath
-            val file = File(path)
-            try {
-                val fileOutputStream = FileOutputStream(file)
+        private fun convertXmlToPdf(showNextButton: Boolean) {
+            // Inflate the XML layout file
+            // Oculta el botón btnxml3
 
-                PdfWriter.getInstance(document, fileOutputStream)
 
-                document.open()
-
-                // Agrega el primer contenido al documento PDF
-                val constraint: ConstraintLayout = findViewById(R.id.constraint9)
-                addViewToPDF(document, constraint)
-
-                Toast.makeText(this, "Guardado exitosamente en $path", Toast.LENGTH_LONG).show()
-
-            } catch (e: Exception) {
-                e.printStackTrace()
-                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG)
-                    .show()
+            // Oculta el botón nextBtn si showNextButton es falso
+            val nextBtn = findViewById<View>(R.id.nextBtn9)
+            if (showNextButton == showNextButton) {
+                nextBtn.visibility = View.GONE
             }
-            document.close()
-            findViewById<Button>(R.id.nextBtn9).visibility = btnNextVisibility
 
-        }
-
-
-        private fun addViewToPDF(document: Document, view: View) {
-            val btnCreatePDF = view.findViewById<Button>(R.id.btnxml9)
-
-            btnCreatePDF.visibility = if (isCreatePDFButtonVisible) View.VISIBLE else View.GONE
-
-            findViewById<Button>(R.id.nextBtn9).visibility = View.GONE
-
-            // Calcula el margen del documento
-            val margin = 0f
-
-            val increasedPageWidth = 550f
-            // Calcula el tamaño de la página del documento
-            val pageSize = document.pageSize
-            val pageWidth = increasedPageWidth - margin * 2.5f
-            val pageHeight = pageSize.height - margin * 2.5f
-
-            // Convierte la vista a un bitmap
-            val bitmap = convertViewToBitmap(view)
-
-            // Convierte el bitmap a bytes para agregarlo al documento PDF
-            val stream = ByteArrayOutputStream()
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
-            val image = Image.getInstance(stream.toByteArray())
-
-            // Ajusta el tamaño de la imagen al documento
-            val aspectRatio = image.width.toFloat() / image.height.toFloat()
-            val newWidth = pageWidth * 1f // Ajusta el ancho según tu preferencia
-            val newHeight = newWidth / aspectRatio
-
-            // Si la imagen es más grande que la página, divide la imagen en varias partes
-            if (newHeight > pageHeight) {
-                divideBitmapIntoSections(document, bitmap, pageHeight, aspectRatio, pageWidth)
+            val constraint = findViewById<ConstraintLayout>(R.id.constraint9)
+            val displayMetrics = DisplayMetrics()
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                this.display!!.getRealMetrics(displayMetrics)
             } else {
-                // Ajusta el tamaño de la imagen al documento
-                image.scaleToFit(newWidth, newHeight)
-
-                // Agrega la imagen al documento
-                document.add(image)
+                this.windowManager.defaultDisplay.getMetrics(displayMetrics)
             }
-        }
 
-        private fun convertViewToBitmap(view: View): Bitmap {
-            val bitmap = Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
-            val canvas = Canvas(bitmap)
-            view.draw(canvas)
-            return bitmap
-        }
+            // Measure the view with UNSPECIFIED height
+            constraint.measure(
+                View.MeasureSpec.makeMeasureSpec(
+                    displayMetrics.widthPixels,
+                    View.MeasureSpec.EXACTLY
+                ),
+                View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+            )
 
-        private fun divideBitmapIntoSections(document: Document, bitmap: Bitmap, pageHeight: Float, aspectRatio: Float, pageWidth: Float) {
-            val numVerticalSections = Math.ceil((bitmap.height.toDouble() / pageHeight)).toInt()
-            var startY = 0f
+            // Calculate total number of pages needed based on view height
+            val totalHeight = constraint.measuredHeight
+            val totalPages = ceil((totalHeight.toFloat() / displayMetrics.heightPixels).toDouble())
+                .toInt()
 
-            for (i in 0 until numVerticalSections) {
-                var sectionHeight = pageHeight
-                val remainingHeight = bitmap.height - startY
+            // Create a new PdfDocument instance
+            val document = PdfDocument()
 
-                if (remainingHeight < sectionHeight) {
-                    sectionHeight = remainingHeight
-                }
+            // Obtain the width and height of the view
+            val viewWidth = constraint.measuredWidth
+            for (i in 0 until totalPages) {
+                // Create a PageInfo object specifying the page attributes
+                val pageInfo =
+                    PdfDocument.PageInfo.Builder(viewWidth, displayMetrics.heightPixels, i + 1)
+                        .create()
 
-                val sectionBitmap = Bitmap.createBitmap(bitmap, 0, startY.toInt(), bitmap.width, sectionHeight.toInt())
+                // Start a new page
+                val page = document.startPage(pageInfo)
 
-                val byteArrayOutputStream = ByteArrayOutputStream()
-                sectionBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
-                val byteArray = byteArrayOutputStream.toByteArray()
+                // Get the Canvas object to draw on the page
+                val canvas = page.canvas
 
-                val sectionImage = Image.getInstance(byteArray)
-                sectionImage.scaleToFit(pageWidth, sectionHeight)
+                // Calculate the portion of the view to be drawn on this page
+                val start = i * displayMetrics.heightPixels
+                val end =
+                    min((start + displayMetrics.heightPixels).toDouble(), totalHeight.toDouble())
+                        .toInt()
 
-                document.newPage()
-                document.add(sectionImage)
+                // Translate the canvas to draw the correct portion of the view
+                canvas.translate(0f, -start.toFloat())
 
-                startY += sectionHeight
+                // Draw the portion of the view on the canvas
+                constraint.layout(0, -start, viewWidth, end)
+                constraint.draw(canvas)
+
+                // Finish the page
+                document.finishPage(page)
+            }
+
+            // Specify the path and filename of the output PDF file
+            val downloadsDir =
+                Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+            val fileName = "Peligros_potenciales2.pdf"
+            val filePath = File(downloadsDir, fileName)
+            try {
+                // Save the document to a file
+                val fos = FileOutputStream(filePath)
+                document.writeTo(fos)
+                document.close()
+
+
+                // Restablece la visibilidad del botón nextBtn si showNextButton es true
+                nextBtn.visibility = View.VISIBLE
+
+                fos.close()
+                // PDF conversion successful
+                Toast.makeText(this, "XML to PDF Conversion Successful", Toast.LENGTH_LONG).show()
+            } catch (e: IOException) {
+                e.printStackTrace()
+                // Error occurred while converting to PDF
             }
         }
     }

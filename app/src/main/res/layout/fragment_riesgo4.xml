@@ -32,13 +32,12 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="370dp"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="4dp"
         android:gravity="center"
         android:text="Verificación de distancias minimas de seguridad (Redes eléctricas)"
         android:textStyle="bold"
@@ -55,17 +54,16 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
         android:background="@drawable/border_black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <TextView
         android:id="@+id/textView39"
-        android:layout_width="388dp"
-        android:layout_height="52dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Distancia horizontal &quot;b&quot; a muros, balcones, salientes, ventanas y diferentes áreas independientemente de la  facilidad de accesibilidad de personas"
@@ -76,8 +74,8 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="390dp"
-        android:layout_height="67dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -334,8 +332,8 @@
 
     <TextView
         android:id="@+id/textView52"
-        android:layout_width="375dp"
-        android:layout_height="52dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Distancia vertical &quot;c&quot; sobre o debajo de balcones o techos de facil acceso a personas, y sobre techos accesibles a vehiculos de maximo 2.45m de altura"
@@ -452,8 +450,8 @@
 
     <TextView
         android:id="@+id/textView62"
-        android:layout_width="359dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Distancia vertical &quot;d&quot; a carreteras, calles, callejones, zonas peatonales, areas sujetas a trafico vehicular para vehiculos de mas de 2.45m de altura"
@@ -465,7 +463,7 @@
         android:id="@+id/textView63"
         android:layout_width="308dp"
         android:layout_height="115dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/border_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -620,46 +618,32 @@
         android:id="@+id/signature_pad"
         android:layout_width="354dp"
         android:layout_height="158dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/signatture"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63"
-        app:layout_constraintVertical_bias="0.326" />
-
-    <Button
-        android:id="@+id/btnPDF"
-        android:layout_width="109dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="32dp"
-        android:text="Guardar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+        app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
     <Button
         android:id="@+id/clear"
         android:layout_width="115dp"
         android:layout_height="37dp"
-        android:layout_marginEnd="280dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:text="clear"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signature_pad"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
 
     <Button
         android:id="@+id/btnNext2"
         android:layout_width="105dp"
         android:layout_height="36dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

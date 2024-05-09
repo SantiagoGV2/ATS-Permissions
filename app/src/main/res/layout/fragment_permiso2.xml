@@ -35,8 +35,8 @@
 
         <TextView
             android:id="@+id/medida"
-            android:layout_width="371dp"
-            android:layout_height="28dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Medidas De Prevención Y Protección"
@@ -49,8 +49,8 @@
         <TextView
             android:id="@+id/text_realizar"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
             android:gravity="center"
             android:text="Tipos de trabajos en alturas a realizar"
@@ -62,13 +62,13 @@
             android:id="@+id/pretales"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="16dp"
             android:text="Pretales"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.534"
             app:layout_constraintStart_toEndOf="@+id/text_realizar"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/medida" />
 
         <CheckBox
             android:id="@+id/escalera"
@@ -84,16 +84,16 @@
             android:id="@+id/btnTareas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="172dp"
+            android:layout_marginTop="8dp"
             android:text="Otras Tareas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/escalera" />
 
         <TextView
             android:id="@+id/text_tarea"
-            android:layout_width="376dp"
-            android:layout_height="72dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,8 +110,8 @@
 
         <TextView
             android:id="@+id/text_procedimiento"
-            android:layout_width="366dp"
-            android:layout_height="68dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnProcedimiento" />
@@ -119,13 +119,12 @@
         <TextView
             android:id="@+id/text_vida"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
             android:text="Línea de vida"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.178"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_procedimiento" />
 
@@ -134,28 +133,28 @@
             android:layout_width="86dp"
             android:layout_height="46dp"
             android:layout_marginTop="12dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_vida"
             app:layout_constraintTop_toBottomOf="@+id/text_procedimiento" />
 
         <CheckBox
             android:id="@+id/no"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_vida"
             app:layout_constraintTop_toBottomOf="@+id/si" />
 
         <TextView
             android:id="@+id/text_tie"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="70dp"
             android:gravity="center"
             android:text="Tie off"
             android:textSize="16sp"
@@ -166,28 +165,27 @@
             android:id="@+id/si2"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_tie"
             app:layout_constraintTop_toBottomOf="@+id/no" />
 
         <CheckBox
             android:id="@+id/no2"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_tie"
             app:layout_constraintTop_toBottomOf="@+id/si2" />
 
         <TextView
             android:id="@+id/text_eslinga"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="68dp"
             android:text="Eslinga de posicionamiento"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -197,28 +195,26 @@
             android:id="@+id/si3"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_eslinga"
             app:layout_constraintTop_toBottomOf="@+id/no2" />
 
         <CheckBox
             android:id="@+id/no3"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_eslinga"
             app:layout_constraintTop_toBottomOf="@+id/si3" />
 
         <TextView
             android:id="@+id/textView82"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
             android:text="Eslinga en Y"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -228,26 +224,25 @@
             android:id="@+id/si4"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
             app:layout_constraintTop_toBottomOf="@+id/no3" />
 
         <CheckBox
             android:id="@+id/no4"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView82"
             app:layout_constraintTop_toBottomOf="@+id/si4" />
 
         <TextView
             android:id="@+id/text_enclaje"
-            android:layout_width="200dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="76dp"
             android:text="Sitema de anclaje"
             android:textAlignment="center"
@@ -258,26 +253,25 @@
             android:id="@+id/si5"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_enclaje"
             app:layout_constraintTop_toBottomOf="@+id/no4" />
 
         <CheckBox
             android:id="@+id/checkBox2"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_enclaje"
             app:layout_constraintTop_toBottomOf="@+id/si5" />
 
         <TextView
             android:id="@+id/item"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="68dp"
             android:text="Casco con barboquejo"
             android:textAlignment="center"
@@ -288,26 +282,25 @@
             android:id="@+id/checkBox3"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item"
             app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
         <CheckBox
             android:id="@+id/no6"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item"
             app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
         <TextView
             android:id="@+id/text_arnes"
             android:layout_width="209dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="76dp"
             android:text="Arnes"
             android:textAlignment="center"
@@ -318,27 +311,26 @@
             android:id="@+id/si7"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView77"
             app:layout_constraintTop_toBottomOf="@+id/no6" />
 
         <CheckBox
             android:id="@+id/no7"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView77"
             app:layout_constraintTop_toBottomOf="@+id/si7" />
 
         <TextView
             android:id="@+id/textView77"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
             android:text="Señalización del área"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -348,27 +340,26 @@
             android:id="@+id/si8"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_guantes"
             app:layout_constraintTop_toBottomOf="@+id/no7" />
 
         <CheckBox
             android:id="@+id/no8"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_guantes"
             app:layout_constraintTop_toBottomOf="@+id/si8" />
 
         <TextView
             android:id="@+id/text_guantes"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
             android:text="Guantes"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -378,27 +369,26 @@
             android:id="@+id/si9"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_gafas"
             app:layout_constraintTop_toBottomOf="@+id/no8" />
 
         <CheckBox
             android:id="@+id/no9"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_gafas"
             app:layout_constraintTop_toBottomOf="@+id/si9" />
 
         <TextView
             android:id="@+id/text_gafas"
             android:layout_width="209dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="65dp"
             android:text="Gafas"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -408,26 +398,25 @@
             android:id="@+id/si10"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_pretales"
             app:layout_constraintTop_toBottomOf="@+id/no9" />
 
         <CheckBox
             android:id="@+id/no10"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_pretales"
             app:layout_constraintTop_toBottomOf="@+id/si10" />
 
         <TextView
             android:id="@+id/text_pretales"
             android:layout_width="209dp"
-            android:layout_height="54dp"
-            android:layout_marginStart="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="68dp"
             android:text="Pretales"
             android:textAlignment="center"
@@ -438,38 +427,27 @@
             android:id="@+id/checkBox13"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="28dp"
             android:text="Si"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_arnes"
             app:layout_constraintTop_toBottomOf="@+id/no10" />
 
         <CheckBox
             android:id="@+id/no11"
             android:layout_width="86dp"
             android:layout_height="46dp"
-            android:layout_marginEnd="28dp"
             android:text="No"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_arnes"
             app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="68dp"
-            android:text="Guardar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/no11" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="84dp"
             android:layout_marginTop="36dp"
             android:text="Next"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_arnes" />
 

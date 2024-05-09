@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="-48dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint"
+        android:id="@+id/constraint15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarAlwaysDrawHorizontalTrack="false"
@@ -36,7 +36,7 @@
 
         <Spinner
             android:id="@+id/nombreConductor"
-            android:layout_width="381dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
 
         <Spinner
             android:id="@+id/cargoConductor"
-            android:layout_width="381dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,23 +66,24 @@
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="191dp"
-            android:layout_height="46dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
             android:ems="10"
             android:hint="Placa"
             android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.072"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cargoConductor" />
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="191dp"
-            android:layout_height="46dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
             android:ems="10"
             android:hint="Kilometraje"
             android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/editTextText"
             app:layout_constraintTop_toBottomOf="@+id/cargoConductor" />
 
@@ -100,19 +101,19 @@
 
         <TextView
             android:id="@+id/textView93"
-            android:layout_width="191dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:gravity="center"
             android:text="Limpieza y Desinfección"
-            android:textAlignment="gravity"
             android:textSize="17sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView92" />
 
         <Spinner
             android:id="@+id/spinner34"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +125,7 @@
             android:id="@+id/textView94"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="SISTEMA MECANICO"
             android:textAlignment="center"
             android:textSize="17sp"
@@ -136,10 +137,10 @@
 
         <TextView
             android:id="@+id/textView95"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Estado Mangueras"
             android:textAlignment="center"
@@ -149,7 +150,7 @@
 
         <Spinner
             android:id="@+id/spinner35"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -158,9 +159,10 @@
 
         <TextView
             android:id="@+id/textView96"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Nivel de liquido de frenos"
             android:textAlignment="center"
@@ -170,7 +172,7 @@
 
         <Spinner
             android:id="@+id/spinner36"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView96"
@@ -178,9 +180,9 @@
 
         <TextView
             android:id="@+id/textView97"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:gravity="center"
             android:text="Pedales de freno, acelerador y clutch"
             android:textAlignment="center"
@@ -190,7 +192,7 @@
 
         <Spinner
             android:id="@+id/spinner37"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView97"
@@ -198,9 +200,9 @@
 
         <TextView
             android:id="@+id/textView98"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:gravity="center"
             android:text="Freno principal y de emergencia"
             android:textSize="17sp"
@@ -209,7 +211,7 @@
 
         <Spinner
             android:id="@+id/spinner38"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView98"
@@ -217,9 +219,10 @@
 
         <TextView
             android:id="@+id/textView99"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Nivel de combustible"
             android:textSize="17sp"
@@ -228,7 +231,7 @@
 
         <Spinner
             android:id="@+id/spinner39"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView99"
@@ -236,9 +239,10 @@
 
         <TextView
             android:id="@+id/textView100"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Nivel liquido refrigerante"
             android:textSize="17sp"
@@ -247,7 +251,7 @@
 
         <Spinner
             android:id="@+id/spinner40"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView100"
@@ -255,9 +259,9 @@
 
         <TextView
             android:id="@+id/textView101"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:gravity="center"
             android:text="Nivel de aceite de motor"
             android:textSize="17sp"
@@ -266,7 +270,7 @@
 
         <Spinner
             android:id="@+id/spinner41"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView101"
@@ -274,9 +278,9 @@
 
         <TextView
             android:id="@+id/textView102"
-            android:layout_width="180dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:gravity="center"
             android:text="Estado de llantas(inclida la de repuesto)"
             android:textSize="17sp"
@@ -285,7 +289,7 @@
 
         <Spinner
             android:id="@+id/spinner42"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView102"
@@ -305,9 +309,9 @@
 
         <TextView
             android:id="@+id/textView105"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Cocuyos"
@@ -317,7 +321,7 @@
 
         <Spinner
             android:id="@+id/spinner43"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -326,9 +330,10 @@
 
         <TextView
             android:id="@+id/textView106"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
             android:gravity="center"
             android:text="Direccionales"
             android:textSize="17sp"
@@ -337,7 +342,7 @@
 
         <Spinner
             android:id="@+id/spinner44"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView106"
@@ -345,9 +350,10 @@
 
         <TextView
             android:id="@+id/textView107"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Luces altas y bajas"
             android:textSize="17sp"
@@ -356,7 +362,7 @@
 
         <Spinner
             android:id="@+id/spinner45"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView107"
@@ -364,9 +370,10 @@
 
         <TextView
             android:id="@+id/textView108"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:text="Luz de freno"
             android:textSize="17sp"
@@ -375,7 +382,7 @@
 
         <Spinner
             android:id="@+id/spinner46"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView108"
@@ -383,9 +390,10 @@
 
         <TextView
             android:id="@+id/textView103"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Luz reversa"
             android:textSize="17sp"
@@ -394,9 +402,10 @@
 
         <TextView
             android:id="@+id/textView109"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Pito"
             android:textSize="17sp"
@@ -405,9 +414,10 @@
 
         <TextView
             android:id="@+id/textView110"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Luces de parqueo"
             android:textSize="17sp"
@@ -416,9 +426,10 @@
 
         <TextView
             android:id="@+id/textView111"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Testigos(Tablero)"
             android:textSize="17sp"
@@ -427,9 +438,10 @@
 
         <TextView
             android:id="@+id/textView112"
-            android:layout_width="180dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="Sistema de encendido del vehiculo"
             android:textSize="17sp"
@@ -438,7 +450,7 @@
 
         <Spinner
             android:id="@+id/spinner20"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView103"
@@ -446,7 +458,7 @@
 
         <Spinner
             android:id="@+id/spinner33"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView109"
@@ -454,7 +466,7 @@
 
         <Spinner
             android:id="@+id/spinner47"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView110"
@@ -462,7 +474,7 @@
 
         <Spinner
             android:id="@+id/spinner48"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView111"
@@ -470,30 +482,20 @@
 
         <Spinner
             android:id="@+id/spinner49"
-            android:layout_width="180dp"
+            android:layout_width="170dp"
             android:layout_height="45dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView112"
             app:layout_constraintTop_toBottomOf="@+id/spinner48" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="85dp"
-            android:layout_marginTop="16dp"
-            android:text="Guardar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView112" />
-
-        <Button
             android:id="@+id/btnnxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="85dp"
             android:text="Next"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner49" />
 
 

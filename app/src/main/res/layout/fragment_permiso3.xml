@@ -35,9 +35,8 @@
         <TextView
             android:id="@+id/item4"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El personal cuanta con el equipo definido para acceder al sitio?"
             android:textSize="15sp"
@@ -48,17 +47,17 @@
             android:id="@+id/spinner3"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/item3"
             app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
         <TextView
             android:id="@+id/item"
             android:layout_width="200dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:gravity="center"
             android:text="¿Se realizo el análisis de seguridad en el trabajo?"
             android:textSize="16sp"
@@ -69,17 +68,16 @@
             android:id="@+id/spinner"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/item"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/item2"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El personal cumple con los requisitos de aptitud para realizar la tarea?"
             android:textSize="15sp"
@@ -90,17 +88,15 @@
             android:id="@+id/spinner2"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/item2"
             app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
         <TextView
             android:id="@+id/item3"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El personal cuanta con el equipo de protección definido para la tarea?"
             android:textSize="15sp"
@@ -110,9 +106,8 @@
         <TextView
             android:id="@+id/item5"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El equipo para acceder al sitio y el de pretección personal fueron inspeccionados?"
             android:textSize="15sp"
@@ -121,10 +116,10 @@
 
         <Spinner
             android:id="@+id/spinner21"
-            android:layout_width="116dp"
+            android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/item4"
             app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
@@ -132,17 +127,16 @@
             android:id="@+id/spinner22"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/item5"
             app:layout_constraintTop_toBottomOf="@+id/spinner21" />
 
         <TextView
             android:id="@+id/textView78"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El sitio donde se ejecutará el trabajo está aislado y señalizado completamente?"
             app:layout_constraintStart_toStartOf="parent"
@@ -152,17 +146,16 @@
             android:id="@+id/spinner23"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView78"
             app:layout_constraintTop_toBottomOf="@+id/spinner22" />
 
         <TextView
             android:id="@+id/textView79"
             android:layout_width="200dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Se han instalado mamparas o cinta para aislar y señalizar  la zona y no permitir el paso de vehículos o personas?"
             app:layout_constraintStart_toStartOf="parent"
@@ -172,17 +165,16 @@
             android:id="@+id/spinner24"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView79"
             app:layout_constraintTop_toBottomOf="@+id/spinner23" />
 
         <TextView
             android:id="@+id/textView80"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Cuentan con eslinga de seguridad con absorbente de caídas?"
             app:layout_constraintStart_toStartOf="parent"
@@ -192,17 +184,16 @@
             android:id="@+id/spinner25"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView80"
             app:layout_constraintTop_toBottomOf="@+id/spinner24" />
 
         <TextView
             android:id="@+id/textView81"
             android:layout_width="202dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Cuentan con freno de seguridad, certificado y apropiado para el tipo de línea de vida?"
             app:layout_constraintStart_toStartOf="parent"
@@ -212,17 +203,16 @@
             android:id="@+id/spinner26"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView81"
             app:layout_constraintTop_toBottomOf="@+id/spinner25" />
 
         <TextView
             android:id="@+id/textView83"
             android:layout_width="200dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Se cuenta con líneas de vida para cada uno de los operadores?"
             app:layout_constraintStart_toStartOf="parent"
@@ -232,8 +222,8 @@
             android:id="@+id/spinner27"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView83"
             app:layout_constraintTop_toBottomOf="@+id/spinner26" />
 
@@ -241,8 +231,7 @@
             android:id="@+id/textView84"
             android:layout_width="200dp"
             android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Los conectores o mosquetones son de doble seguro?"
             app:layout_constraintStart_toStartOf="parent"
@@ -252,8 +241,8 @@
             android:id="@+id/spinner28"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView84"
             app:layout_constraintTop_toBottomOf="@+id/spinner27" />
 
@@ -261,8 +250,7 @@
             android:id="@+id/textView85"
             android:layout_width="200dp"
             android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Las cuerdas se encuentran libres de nudos?"
             app:layout_constraintStart_toStartOf="parent"
@@ -272,8 +260,8 @@
             android:id="@+id/spinner29"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView85"
             app:layout_constraintTop_toBottomOf="@+id/spinner28" />
 
@@ -281,8 +269,7 @@
             android:id="@+id/textView87"
             android:layout_width="200dp"
             android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Se controlaron los riesgos presentes en el sitio de trabajo?"
             app:layout_constraintStart_toStartOf="parent"
@@ -292,8 +279,8 @@
             android:id="@+id/spinner30"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView87"
             app:layout_constraintTop_toBottomOf="@+id/spinner29" />
 
@@ -301,8 +288,7 @@
             android:id="@+id/textView88"
             android:layout_width="200dp"
             android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿El personal que va a realizar la labor conoce el procedimiento de emergencia y rescate?"
             app:layout_constraintStart_toStartOf="parent"
@@ -312,8 +298,8 @@
             android:id="@+id/spinner31"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView88"
             app:layout_constraintTop_toBottomOf="@+id/spinner30" />
 
@@ -321,8 +307,7 @@
             android:id="@+id/textView89"
             android:layout_width="200dp"
             android:layout_height="55dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="16dp"
             android:gravity="center"
             android:text="¿Las escaleras cumplen las especificaciones técnicas?"
             app:layout_constraintStart_toStartOf="parent"
@@ -332,8 +317,8 @@
             android:id="@+id/spinner32"
             android:layout_width="110dp"
             android:layout_height="46dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView89"
             app:layout_constraintTop_toBottomOf="@+id/spinner31" />
 
@@ -374,8 +359,8 @@
 
         <TextView
             android:id="@+id/textView90"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:gravity="center"
             android:text="Firma supervisor"
@@ -387,8 +372,8 @@
 
         <TextView
             android:id="@+id/textView91"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Firma tecnico"
             android:textSize="17sp"
@@ -410,18 +395,10 @@
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="76dp"
+            android:layout_marginTop="8dp"
             android:text="Next"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/clear2" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="72dp"
-            android:text="Guardar"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/clear2" />
 
         <Button

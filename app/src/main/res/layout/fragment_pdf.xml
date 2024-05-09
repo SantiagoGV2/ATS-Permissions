@@ -20,14 +20,13 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="184dp"
         android:text="Formulario de Riesgo"
         android:textAlignment="center"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,11 +34,11 @@
         android:id="@+id/btnDescarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginBottom="340dp"
+        android:layout_marginTop="32dp"
         android:text="Descargar PDF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
     </Button>
 
@@ -47,16 +46,16 @@
         android:id="@+id/linkTextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="32dp"
         android:autoLink="web"
         android:linksClickable="true"
         android:text="Suba su formulario en este link "
+        android:textColor="@color/purple_700"
         android:textColorLink="@color/colorLink"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDescarga"
-        android:textColor="@color/purple_700"/>
+        app:layout_constraintTop_toBottomOf="@+id/btnDescarga" />
     <Button
         android:id="@+id/btnvolver"
         android:layout_width="wrap_content"

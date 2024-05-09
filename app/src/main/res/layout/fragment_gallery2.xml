@@ -34,13 +34,13 @@
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="406dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="IDENTIFICACIÓN DE PELIGROS POTENCIALES(Alturas)"
         android:textAlignment="center"
         android:textSize="17sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,33 +48,31 @@
         android:id="@+id/btnalturas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginBottom="140dp"
         android:text="Alturas"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31"
-        app:layout_constraintVertical_bias="0.044">
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
 
     </Button>
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="400dp"
-        android:layout_height="140dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btneléctrico" />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="400dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnalturas" />
 
@@ -82,8 +80,8 @@
         android:id="@+id/btneléctrico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
         android:text="Eléctrico"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27">
 
@@ -93,8 +91,8 @@
         android:id="@+id/btnbiomecanicos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
         android:text="Biomecánicos"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23">
 
@@ -105,8 +103,8 @@
         android:id="@+id/btnfisico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:text="Físico"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22">
 
@@ -114,21 +112,23 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="399dp"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnfisico" />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="400dp"
-        android:layout_height="120dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnbiomecanicos" />
 
@@ -136,23 +136,14 @@
         android:id="@+id/nextBtn2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26">
 
     </Button>
 
-    <Button
-        android:id="@+id/btnxml2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:text="Guardar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView26">
 
-    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
