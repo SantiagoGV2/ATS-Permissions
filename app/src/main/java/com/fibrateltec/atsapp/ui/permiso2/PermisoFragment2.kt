@@ -257,10 +257,10 @@ class PermisoFragment2 : Fragment() {
 
                 fos.close()
                 // PDF conversion successful
-                Toast.makeText(this, "XML to PDF Conversion Successful", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Guardado", Toast.LENGTH_LONG).show()
             } catch (e: IOException) {
                 e.printStackTrace()
-                // Error occurred while converting to PDF
+                Toast.makeText(this, "Error al guardar: ${e.message}", Toast.LENGTH_LONG).show()
             }
         }
     }

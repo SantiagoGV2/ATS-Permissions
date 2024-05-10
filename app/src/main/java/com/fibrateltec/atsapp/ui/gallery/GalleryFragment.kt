@@ -744,7 +744,7 @@ class GalleryFragment : Fragment() {
 
             fos.close()
             // PDF conversion successful
-            Toast.makeText(requireContext(), "XML to PDF Conversion Successful", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Guardado", Toast.LENGTH_LONG).show()
         } catch (e: IOException) {
             e.printStackTrace()
             // Error occurred while converting to PDF
